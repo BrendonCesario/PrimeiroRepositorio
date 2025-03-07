@@ -1,64 +1,93 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
 
-  <title>index</title>
+    <title>Site Básico com HTML Semântico</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, section, article, aside, footer {
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin: 10px;
+        }
+        header {
+            background: #f4f4f4;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
 
 </head>
 
 <body>
 
-  <!-- Cabeçalho da página -->
-  <h1>Informações de Contatos</h1>
+    <header>
 
-  <!-- Início da Tabela -->
-  <table>
-    <!-- Legenda que descreve o conteúdo da tabela -->
-    <caption>Contatos de Funcionários</caption>
-    
-    <!-- Cabeçalho da tabela (colunas) -->
-    <thead>
-      <tr>
-        <th>Nome</th>   <!-- Título da coluna: Nome -->
-        <th>Cargo</th>  <!-- Título da coluna: Cargo -->
-        <th>Email</th>  <!-- Título da coluna: Email -->
-        <th>Telefone</th>  <!-- Título da coluna: Telefone -->
-      </tr>
-    </thead>
+        <h1>Meu Site</h1>
+    </header>
 
-    <!-- Corpo da tabela (dados) -->
-    <tbody>
-      <tr>
-        <td>Maria Silva</td>  <!-- Nome da primeira pessoa -->
-        <td>Gerente</td>      <!-- Cargo da primeira pessoa -->
-        <td>maria@empresa.com</td> <!-- Email da primeira pessoa -->
-        <td>(11) 1234-5678</td>  <!-- Telefone da primeira pessoa -->
-      </tr>
-      <tr>
-        <td>João Oliveira</td>  <!-- Nome da segunda pessoa -->
-        <td>Analista</td>      <!-- Cargo da segunda pessoa -->
-        <td>joao@empresa.com</td> <!-- Email da segunda pessoa -->
-        <td>(11) 9876-5432</td>  <!-- Telefone da segunda pessoa -->
-      </tr>
-      <tr>
-        <td>Ana Santos</td>  <!-- Nome da terceira pessoa -->
-        <td>Assistente</td>      <!-- Cargo da terceira pessoa -->
-        <td>ana@empresa.com</td> <!-- Email da terceira pessoa -->
-        <td>(21) 3456-7890</td>  <!-- Telefone da terceira pessoa -->
-      </tr>
-    </tbody>
 
-    <!-- Rodapé da tabela (informações adicionais) -->
-    <tfoot>
-      <tr>
-        <td colspan="4">Endereço: Rua Fictícia, 123, São Paulo, SP</td> <!-- Endereço da empresa, abrange as 4 colunas -->
-      </tr>
-      
-    </tfoot>
+    <nav>
+        <ul>
 
-  </table>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+
+    </nav>
+
+    <nav>
+        <ul>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Seção Principal</h2>
+            <p>Conteúdo importante do site.</p>
+        </section>
+
+        <article>
+            <h2>Artigo</h2>
+            <p>Um artigo interessante sobre um tópico.</p>
+        </article>
+
+        <aside>
+            <h3>Barra Lateral</h3>
+            <p>Informações adicionais e links úteis.</p>
+        </aside>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+
+    </footer>
 
 </body>
+
 </html>
